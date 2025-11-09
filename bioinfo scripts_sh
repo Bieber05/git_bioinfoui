@@ -1,0 +1,7 @@
+!/user/bin/bash
+# File: rename.sh
+
+for file in *.fasta; do
+ echo "Processing $file"
+mv "$file" "${file%.fasta}_processed.fasta"
+done
